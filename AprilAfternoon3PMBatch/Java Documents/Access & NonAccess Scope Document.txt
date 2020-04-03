@@ -1,0 +1,31 @@
+
+AM  : public, protected, <default> , private
+
+NAM : final, abstract, strictfp, static, native, synchronized, transient,
+      volatile
+
+
+AM NAM class ClassName
+{
+   AM NAM int a = 10;
+
+   AM NAM void methodName()
+   {
+     --------
+   }
+}
+
+
+class/AM  : public, <default>
+class/NAM : final, abstract, strictfp
+
+
+Method/AM  : public, protected, <default> , private
+Method/NAM : final, abstract, strictfp, static, native, synchronized
+
+
+Variable/AM  : public, protected, <default> , private
+Variable/NAM : final, static, transient, volatile
+
+
+
