@@ -29,3 +29,24 @@ Variable/NAM : final, static, transient, volatile
 
 
 
+*****************************************************************************
+
+static method()
+{
+  
+  static family(variable/method): either directly or indirectly with 
+                                  className
+
+  instance family(variable/method): through class Object creation
+}
+
+
+instance method()
+{
+   static family(variable/method): either directly or indirectly with 
+                                   className
+
+   instance family(variable/method): Directly we can access
+}
+
+
