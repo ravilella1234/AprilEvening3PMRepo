@@ -1,6 +1,6 @@
 package com.project;
 
-public strictfp class A 
+public  class A 
 {
 	
 	public void m1()
