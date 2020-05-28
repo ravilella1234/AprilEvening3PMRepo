@@ -3,6 +3,7 @@ package com.launchers;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -45,6 +46,9 @@ public class BaseTest
 		childProp.load(fis);
 		String url = childProp.getProperty("amazonurl");
 		System.out.println(url);
+		
+		fis = new FileInputStream(projectPath + "//log4jconfig.properties"); 
+		PropertyConfigurator.configure(fis);
 	}
 	
 	public static void launchBrowser(String browser)
@@ -55,7 +59,7 @@ public class BaseTest
 			option.addArguments("user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 9");
 			option.addArguments("--disable-notifications");
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\May Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\MayBatch Drivers\\chromedriver.exe");
 			driver = new ChromeDriver(option);
 		}
 		else if(p.getProperty(browser).equals("firefox"))

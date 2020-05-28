@@ -1,0 +1,6 @@
+Initialising Properties Files ........
+Opened the Browser : - chrome
+Navigated to url : - https://www.amazon.in
+Selected the option Books by using the locator :- searchDropdownBox
+Entered the test Harry Potter by using locaotr : - twotabsearchtextbox
+Clicked on Search Buttton by usinf locator : - //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
