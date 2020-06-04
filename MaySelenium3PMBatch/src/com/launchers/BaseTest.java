@@ -16,6 +16,7 @@ import org.openqa.selenium.firefox.ProfilesIni;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseTest 
 {
@@ -63,7 +64,7 @@ public class BaseTest
 		if(p.getProperty(browser).equals("chrome"))
 		{
 			ChromeOptions option = new ChromeOptions();
-			option.addArguments("user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 9");
+			option.addArguments("--user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 9");
 			option.addArguments("--disable-notifications");
 			
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\MayBatch Drivers\\chromedriver.exe");
@@ -129,6 +130,27 @@ public class BaseTest
 	{
 		getElement(locatorKey).sendKeys(option);
 		//driver.findElement(By.id(locatorKey)).sendKeys(option);
+	}
+	
+	
+	public static Boolean isLinkEquals(String expectedLink)
+	{
+		String actualLink = driver.findElement(By.xpath("//div[@id='nav-xshop']//a[contains(@class,'')][contains(text(),'Customer Service')]")).getAttribute("innerHTML");
+		if(actualLink.equals(expectedLink))
+			return true;
+		else
+			return false;
+	}
+	
+	
+	public static void reportSuccess(String passMessage) 
+	{
+		test.log(LogStatus.PASS, passMessage);
+	}
+
+	public static void reportFailure(String failMessage) 
+	{
+		test.log(LogStatus.FAIL, failMessage);
 	}
 
 }
