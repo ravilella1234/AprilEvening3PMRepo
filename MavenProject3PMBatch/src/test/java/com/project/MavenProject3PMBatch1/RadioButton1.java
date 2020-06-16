@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.project.MavenProject3PMBatch.BaseTest;
@@ -13,16 +14,17 @@ import com.project.MavenProject3PMBatch.BaseTest;
 public class RadioButton1 extends BaseTest
 {
 
-	@BeforeMethod
-	  public void beforeMethod() throws Exception 
+	@BeforeMethod(groups = {"regression","smoke"})
+	@Parameters("browser")
+	  public void beforeMethod(String bType) throws Exception 
 	  {
 		init();
-		launchBrowser("chromebrowser");
+		launchBrowser(bType);
 		navigateUrl("radiourl");
 	  }
 	
 	
-	@Test
+	@Test(groups = {"regression","smoke"})
 	public void radioButton1() throws Exception
 	{
 		Thread.sleep(3000);
@@ -35,7 +37,7 @@ public class RadioButton1 extends BaseTest
 	}
  
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","smoke"})
   public void afterMethod() 
   {
 	  driver.quit();

@@ -5,21 +5,23 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.project.MavenProject3PMBatch.BaseTest;
 
 public class LinksTesting1 extends BaseTest
 {
-	@BeforeMethod
-	public void setup() throws Exception
+	@BeforeMethod(groups = {"regression"})
+	@Parameters("browser")
+	public void setup(String bType) throws Exception
 	{
 		init();
-		launchBrowser("chromebrowser");
+		launchBrowser(bType);
 		navigateUrl("googleurl");
 	}
 	
-	@Test
+	@Test(groups = {"regression"})
 	public void linktesting1()
 	
 	 {
@@ -33,7 +35,7 @@ public class LinksTesting1 extends BaseTest
 		
 	 }
 	
-	@AfterMethod
+	@AfterMethod(groups = {"regression"})
 	public void tearDown()
 	{
 		driver.quit();

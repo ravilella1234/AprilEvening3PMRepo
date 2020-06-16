@@ -11,7 +11,7 @@ public class TC_002 extends BaseTest
 {
   
   
-  @BeforeMethod
+  @BeforeMethod(groups = {"regression","sanity"})
   @Parameters("browser")
   public void beforeMethod(String bType) throws Exception 
   {
@@ -24,7 +24,7 @@ public class TC_002 extends BaseTest
   }
   
   
-  @Test
+  @Test(groups = {"regression","sanity"})
   public void amazon() 
   {
 	  System.out.println("test method");
@@ -35,7 +35,7 @@ public class TC_002 extends BaseTest
 		clickElement("amazonsearchbutton_xpath");
   }
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","sanity"})
   public void afterMethod() 
   {
 	  System.out.println("after Method");
