@@ -1,6 +1,5 @@
 package com.project.MavenProject3PMBatch1;
 
-import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 
