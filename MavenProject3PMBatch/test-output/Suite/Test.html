@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 17 15:40:20 IST 2020</td>
+<td>Started on:</td><td>Thu Jun 18 15:44:22 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12101 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22371 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,29 +67,51 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.project.MavenProject3PMBatch.TC_003.test()'><b>test</b><br>Test class: com.project.MavenProject3PMBatch.TC_003</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Links are not equal... expected [true] but found [false],
-	error1 expected [true] but found [false],
-	error3 expected [true] but found [false]
-	at com.project.MavenProject3PMBatch.TC_003.test(TC_003.java:45)
+<td title='com.project.MavenProject3PMBatch1.TC_002.amazon()'><b>amazon</b><br>Test class: com.project.MavenProject3PMBatch1.TC_002<br/>
+<a href="#Output-1845623216" onClick='toggleBox("Output-1845623216", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1845623216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1845623216">
+Test started Running:amazon<br/>
+<a href='D:\AprilWorkSpace\MavenProject3PMBatch//success//Thu_Jun_18_15_44_21_IST_2020.png'> <img src='D:\AprilWorkSpace\MavenProject3PMBatch//success//Thu_Jun_18_15_44_21_IST_2020.png' height='100' width='100'/> </a><br/>
+Test has Success:amazon<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.project.MavenProject3PMBatch1.TC_002@d44fc21</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.project.MavenProject3PMBatch1.TC_002.test1()'><b>test1</b><br>Test class: com.project.MavenProject3PMBatch1.TC_002<br/>
+<a href="#Output-1227264471" onClick='toggleBox("Output-1227264471", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1227264471" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1227264471">
+Test started Running:test1<br/>
+Test is skipped:test1<br/>
+</div>
+</td>
+<td><div><pre>org.testng.SkipException: test1 is skipped...
+	at com.project.MavenProject3PMBatch1.TC_002.test1(TC_002.java:42)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1987360300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1987360300'><pre>java.lang.AssertionError: The following asserts failed:
-	Links are not equal... expected [true] but found [false],
-	error1 expected [true] but found [false],
-	error3 expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at com.project.MavenProject3PMBatch.TC_003.test(TC_003.java:45)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1227264471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1227264471'><pre>org.testng.SkipException: test1 is skipped...
+	at com.project.MavenProject3PMBatch1.TC_002.test1(TC_002.java:42)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -119,8 +141,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>com.project.MavenProject3PMBatch.TC_003@3fd7a715</td></tr>
+<td>0</td>
+<td>com.project.MavenProject3PMBatch1.TC_002@d44fc21</td></tr>
 </table><p>
 </body>
 </html>

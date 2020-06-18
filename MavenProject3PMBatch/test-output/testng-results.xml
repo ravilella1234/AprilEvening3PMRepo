@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Test started Running:amazon]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\AprilWorkSpace\MavenProject3PMBatch//success//Thu_Jun_18_15_44_21_IST_2020.png'> <img src='D:\AprilWorkSpace\MavenProject3PMBatch//success//Thu_Jun_18_15_44_21_IST_2020.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Test has Success:amazon]]>
+    </line>
+    <line>
+      <![CDATA[Test started Running:test1]]>
+    </line>
+    <line>
+      <![CDATA[Test is skipped:test1]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="12101" started-at="2020-06-17T15:40:20 IST" finished-at="2020-06-17T15:40:32 IST">
+  <suite name="Suite" duration-ms="22371" started-at="2020-06-18T15:44:22 IST" finished-at="2020-06-18T15:44:44 IST">
     <groups>
+      <group name="regression">
+        <method signature="TC_002.amazon()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@d44fc21]" name="amazon" class="com.project.MavenProject3PMBatch1.TC_002"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC_002.amazon()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@d44fc21]" name="amazon" class="com.project.MavenProject3PMBatch1.TC_002"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="12101" started-at="2020-06-17T15:40:20 IST" finished-at="2020-06-17T15:40:32 IST">
-      <class name="com.project.MavenProject3PMBatch.TC_003">
-        <test-method status="PASS" signature="startprocess(java.lang.String)[pri:0, instance:com.project.MavenProject3PMBatch.TC_003@3fd7a715]" name="startprocess" is-config="true" duration-ms="9422" started-at="2020-06-17T15:40:20 IST" finished-at="2020-06-17T15:40:29 IST">
+    <test name="Test" duration-ms="22371" started-at="2020-06-18T15:44:22 IST" finished-at="2020-06-18T15:44:44 IST">
+      <class name="com.project.MavenProject3PMBatch1.TC_002">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@d44fc21]" name="beforeMethod" is-config="true" duration-ms="9488" started-at="2020-06-18T15:44:22 IST" finished-at="2020-06-18T15:44:31 IST">
           <params>
             <param index="0">
               <value>
@@ -17,23 +38,43 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startprocess -->
-        <test-method status="FAIL" signature="test()[pri:0, instance:com.project.MavenProject3PMBatch.TC_003@3fd7a715]" name="test" duration-ms="2523" started-at="2020-06-17T15:40:30 IST" finished-at="2020-06-17T15:40:32 IST">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@d44fc21]" name="amazon" duration-ms="2908" started-at="2020-06-18T15:44:31 IST" finished-at="2020-06-18T15:44:34 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Test started Running:amazon]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\AprilWorkSpace\MavenProject3PMBatch//success//Thu_Jun_18_15_44_21_IST_2020.png'> <img src='D:\AprilWorkSpace\MavenProject3PMBatch//success//Thu_Jun_18_15_44_21_IST_2020.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[Test has Success:amazon]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@d44fc21]" name="afterMethod" is-config="true" duration-ms="943" started-at="2020-06-18T15:44:36 IST" finished-at="2020-06-18T15:44:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@d44fc21]" name="beforeMethod" is-config="true" duration-ms="6739" started-at="2020-06-18T15:44:37 IST" finished-at="2020-06-18T15:44:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="test1()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@d44fc21]" name="test1" duration-ms="3" started-at="2020-06-18T15:44:43 IST" finished-at="2020-06-18T15:44:43 IST">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[The following asserts failed:
-Links are not equal... expected [true] but found [false],
-error1 expected [true] but found [false],
-error3 expected [true] but found [false]]]>
+              <![CDATA[test1 is skipped...]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Links are not equal... expected [true] but found [false],
-error1 expected [true] but found [false],
-error3 expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at com.project.MavenProject3PMBatch.TC_003.test(TC_003.java:45)
+              <![CDATA[org.testng.SkipException: test1 is skipped...
+at com.project.MavenProject3PMBatch1.TC_002.test1(TC_002.java:42)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -64,11 +105,21 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test started Running:test1]]>
+            </line>
+            <line>
+              <![CDATA[Test is skipped:test1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@d44fc21]" name="afterMethod" is-config="true" duration-ms="899" started-at="2020-06-18T15:44:43 IST" finished-at="2020-06-18T15:44:44 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.project.MavenProject3PMBatch.TC_003 -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.project.MavenProject3PMBatch1.TC_002 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

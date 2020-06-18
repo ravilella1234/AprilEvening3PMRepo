@@ -1,5 +1,6 @@
 package com.project.MavenProject3PMBatch1;
 
+import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -35,6 +36,12 @@ public class TC_002 extends BaseTest
 		clickElement("amazonsearchbutton_xpath");
   }
 
+  @Test
+  public void test1()
+  {
+	  throw new SkipException("test1 is skipped...");
+  }
+  
   @AfterMethod(groups = {"regression","sanity"})
   public void afterMethod() 
   {
