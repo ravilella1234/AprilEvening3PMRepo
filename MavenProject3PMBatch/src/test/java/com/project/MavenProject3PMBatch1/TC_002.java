@@ -36,11 +36,7 @@ public class TC_002 extends BaseTest
 		clickElement("amazonsearchbutton_xpath");
   }
 
-  @Test
-  public void test1()
-  {
-	  throw new SkipException("test1 is skipped...");
-  }
+ 
   
   @AfterMethod(groups = {"regression","sanity"})
   public void afterMethod() 

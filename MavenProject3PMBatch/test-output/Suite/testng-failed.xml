@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="com.project.MavenProject3PMBatch.listners.Listener"/>
+    <listener class-name="com.project.MavenProject3PMBatch.listners.RetryListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
@@ -10,8 +11,8 @@
       <class name="com.project.MavenProject3PMBatch1.TC_002">
         <methods>
           <include name="beforeMethod"/>
+          <include name="amazon"/>
           <include name="afterMethod"/>
-          <include name="test1"/>
         </methods>
       </class> <!-- com.project.MavenProject3PMBatch1.TC_002 -->
     </classes>

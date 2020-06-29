@@ -4,6 +4,7 @@
 
   <listeners>
   	<listener class-name="com.project.MavenProject3PMBatch.listners.Listener"></listener>
+  	<listener class-name="com.project.MavenProject3PMBatch.listners.RetryListener"></listener>
   </listeners>
 
   <test thread-count="5" name="Test">
