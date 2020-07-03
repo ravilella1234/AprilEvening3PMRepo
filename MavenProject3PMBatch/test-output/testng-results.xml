@@ -1,56 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
-    <line>
-      <![CDATA[Test started Running:amazon]]>
-    </line>
-    <line>
-      <![CDATA[<a href='D:\AprilWorkSpace\MavenProject3PMBatch//success//Mon_Jun_29_15_46_30_IST_2020.png'> <img src='D:\AprilWorkSpace\MavenProject3PMBatch//success//Mon_Jun_29_15_46_30_IST_2020.png' height='100' width='100'/> </a>]]>
-    </line>
-    <line>
-      <![CDATA[Test has Success:amazon]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="19851" started-at="2020-06-29T15:46:30 IST" finished-at="2020-06-29T15:46:50 IST">
+  <suite name="Default suite" duration-ms="1542" started-at="2020-07-03T16:04:54 IST" finished-at="2020-07-03T16:04:56 IST">
     <groups>
-      <group name="regression">
-        <method signature="TC_002.amazon()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@1877ab81]" name="amazon" class="com.project.MavenProject3PMBatch1.TC_002"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="TC_002.amazon()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@1877ab81]" name="amazon" class="com.project.MavenProject3PMBatch1.TC_002"/>
-      </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="19851" started-at="2020-06-29T15:46:30 IST" finished-at="2020-06-29T15:46:50 IST">
-      <class name="com.project.MavenProject3PMBatch1.TC_002">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@1877ab81]" name="beforeMethod" is-config="true" duration-ms="10553" started-at="2020-06-29T15:46:30 IST" finished-at="2020-06-29T15:46:41 IST">
+    <test name="Default test" duration-ms="1542" started-at="2020-07-03T16:04:54 IST" finished-at="2020-07-03T16:04:56 IST">
+      <class name="excelOperations.DataManagementwithHashTable">
+        <test-method status="PASS" signature="testcase(java.util.Hashtable)[pri:0, instance:excelOperations.DataManagementwithHashTable@1c3a4799]" name="testcase" duration-ms="19" started-at="2020-07-03T16:04:56 IST" data-provider="getData" finished-at="2020-07-03T16:04:56 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[{ExpectedResult=LoginSuccess, UserPassword=zoho2015, Runmode=Y, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@1877ab81]" name="amazon" duration-ms="7294" started-at="2020-06-29T15:46:41 IST" finished-at="2020-06-29T15:46:48 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Test started Running:amazon]]>
-            </line>
-            <line>
-              <![CDATA[<a href='D:\AprilWorkSpace\MavenProject3PMBatch//success//Mon_Jun_29_15_46_30_IST_2020.png'> <img src='D:\AprilWorkSpace\MavenProject3PMBatch//success//Mon_Jun_29_15_46_30_IST_2020.png' height='100' width='100'/> </a>]]>
-            </line>
-            <line>
-              <![CDATA[Test has Success:amazon]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenProject3PMBatch1.TC_002@1877ab81]" name="afterMethod" is-config="true" duration-ms="876" started-at="2020-06-29T15:46:49 IST" finished-at="2020-06-29T15:46:50 IST">
+        </test-method> <!-- testcase -->
+        <test-method status="PASS" signature="testcase(java.util.Hashtable)[pri:0, instance:excelOperations.DataManagementwithHashTable@1c3a4799]" name="testcase" duration-ms="3" started-at="2020-07-03T16:04:56 IST" data-provider="getData" finished-at="2020-07-03T16:04:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=LoginFailure, UserPassword=P2, Runmode=N, UserName=U2, Browser=firefox}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.project.MavenProject3PMBatch1.TC_002 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testcase -->
+        <test-method status="PASS" signature="testcase(java.util.Hashtable)[pri:0, instance:excelOperations.DataManagementwithHashTable@1c3a4799]" name="testcase" duration-ms="2" started-at="2020-07-03T16:04:56 IST" data-provider="getData" finished-at="2020-07-03T16:04:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=LoginSuccess, UserPassword=P3, Runmode=N, UserName=U3, Browser=ie}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase -->
+      </class> <!-- excelOperations.DataManagementwithHashTable -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
