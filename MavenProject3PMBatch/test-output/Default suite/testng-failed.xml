@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="excelOperations.DataManagementwithHashTable">
+      <class name="pageObjectmodel.POM">
         <methods>
-          <include name="testcase"/>
+          <include name="endProcess"/>
+          <include name="login"/>
+          <include name="startprocess"/>
         </methods>
-      </class> <!-- excelOperations.DataManagementwithHashTable -->
+      </class> <!-- pageObjectmodel.POM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
