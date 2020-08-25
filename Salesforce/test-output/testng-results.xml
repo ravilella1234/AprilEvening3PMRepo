@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="129" started-at="2020-08-17T10:04:47Z" finished-at="2020-08-17T10:04:48Z">
+  <suite name="Default suite" duration-ms="1930" started-at="2020-08-25T10:25:39Z" finished-at="2020-08-25T10:25:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="129" started-at="2020-08-17T10:04:47Z" finished-at="2020-08-17T10:04:48Z">
+    <test name="Default test" duration-ms="1930" started-at="2020-08-25T10:25:39Z" finished-at="2020-08-25T10:25:41Z">
       <class name="com.project.Salesforce.suitea.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.project.Salesforce.suitea.LoginTest@436a4e4b]" name="init" is-config="true" duration-ms="35" started-at="2020-08-17T10:04:48Z" finished-at="2020-08-17T10:04:48Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.Salesforce.suitea.LoginTest@436a4e4b]" name="init" is-config="true" duration-ms="1874" started-at="2020-08-25T10:25:39Z" finished-at="2020-08-25T10:25:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.project.Salesforce.suitea.LoginTest@436a4e4b]" name="f" duration-ms="22" started-at="2020-08-17T10:04:48Z" finished-at="2020-08-17T10:04:48Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.project.Salesforce.suitea.LoginTest@436a4e4b]" name="f" duration-ms="9" started-at="2020-08-25T10:25:41Z" finished-at="2020-08-25T10:25:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.project.Salesforce.suitea.LoginTest@436a4e4b]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-08-17T10:04:48Z" finished-at="2020-08-17T10:04:48Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.project.Salesforce.suitea.LoginTest@436a4e4b]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-08-25T10:25:41Z" finished-at="2020-08-25T10:25:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
